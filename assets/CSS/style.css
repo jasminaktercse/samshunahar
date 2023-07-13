@@ -1,0 +1,116 @@
+/* Comon Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.text-info {
+  color: #43d5cb !important;
+}
+.bg-info {
+  background-color: #43d5cb !important;
+}
+.border-info {
+  border-color: #43d5cb !important;
+}
+.font-xsm {
+  font-size: 14px !important;
+}
+.btn-info {
+  background-color: #43d5cb !important;
+}
+/* Home */
+.my___Nav_UL > li {
+  transition: 0.1s;
+}
+.my___Nav_UL li ul {
+  clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+  transition: 0.2s;
+  min-width: 250px !important;
+}
+.my___Nav_UL li ul li i {
+  transition: 1s;
+}
+.my___Nav_UL li ul li:hover i {
+  opacity: 1 !important;
+}
+.my___Nav_UL li ul li span {
+  transition: 0.5s;
+}
+.my___Nav_UL li ul li:hover span {
+  margin-left: 10px;
+  color: #43d5cb;
+}
+
+#sliders .carousel-inner .carousel-item img {
+  height: 350px !important;
+}
+
+/*Home------------- Doctors Slider */
+.swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
+
+/*Home------------------ Bst__Labratory */
+.Bst__Labratory .Bst__Labratory-right {
+  border-radius: 110px 20px;
+}
+
+/* Home----------Services__Container */
+.Services__Container img:hover {
+  animation-name: upDown;
+  animation-duration: 1s;
+}
+
+/* Home-----------------Galary */
+.Galary___Container .galary__img {
+  transition: 1s;
+  height: 300px !important;
+}
+.Galary___Container .galary__img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes upDown {
+  from {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+/* Responsive Fixin */
+@media screen and (min-width: 992px) {
+  /*Home------------------ Nav */
+  .my___Nav_UL > li {
+    border-bottom: 2px solid transparent !important;
+  }
+  .my___Nav_UL > li:hover {
+    border-bottom: 2px solid #43d5cb !important;
+  }
+  .my___Nav_UL li:hover ul {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 111111 !important;
+  }
+  .transform-x-80 {
+    transform: translateY(-50px);
+  }
+}
+
+/* Learg Device */
+@media screen and (max-width: 991px) {
+  .my___Nav_UL li a:focus + ul {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    position: relative !important;
+  }
+}
